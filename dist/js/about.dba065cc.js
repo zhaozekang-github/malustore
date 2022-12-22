@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvue3_newbee"]=self["webpackChunkvue3_newbee"]||[]).push([[443],{4854:function(e,n,u){u.r(n),u.d(n,{default:function(){return i}});var r=u(6252);function t(e,n,u,t,a,c){return(0,r.wg)(),(0,r.iD)("div",null," about ")}var a={},c=u(3744);const f=(0,c.Z)(a,[["render",t]]);var i=f}}]);
+//# sourceMappingURL=about.dba065cc.js.map
