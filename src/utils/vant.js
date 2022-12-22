@@ -1,24 +1,7 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
 import { ActionBar, ActionBarIcon, ActionBarButton, Divider, Popup, Overlay, Loading, Dialog, ContactCard, Form, AddressEdit, AddressList, Field, CellGroup, Cell, SwipeCell, Icon, Stepper, Card, Checkbox, CheckboxGroup, Button, Swipe, SwipeItem, PullRefresh, List, Tab, Tabs, SubmitBar, Toast, Skeleton } from 'vant'
-import 'vant/lib/index.css'; // 全局引入样式
-import 'lib-flexible/flexible'
-import { createPinia } from 'pinia'
-
-
-const app = createApp(App) //创建app
-// 全局过滤器
-app.config.globalProperties.$filters = {
-    prefix(url) {
-        if (url && url.startsWith('http')) {
-            return url
-        } else {
-            url = `http://backend-api-01.newbee.ltd${url}`
-            return url
-        }
-    }
-}
+import { app } from '../main'
+// const app = createApp(App)
 
 app.use(ActionBarButton)
     .use(ActionBarIcon)
@@ -51,12 +34,3 @@ app.use(ActionBarButton)
     .use(Checkbox)
     .use(CheckboxGroup)
     .use(Skeleton)
-
-app.config.productionTip = false
-
-const pinia = createPinia()
-app.use(pinia)
-
-app.use(router)
-
-app.mount('#app')
